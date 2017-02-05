@@ -46,10 +46,10 @@
             {{ form.password.label }}
 
             {% if form.password.errors %}
-            {% for error in password.errors %}
+            {% for error in form.password.errors %}
               <p class="error-message">{{ error }}</p>
             {% endfor %}
-            
+
           {% endif %}
             {{ form.password }}
            </div>
